@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alert {
+  @apply bg-[#f44336] text-[white] p-5;
+}
+.closebtn {
+  @apply text-[white] font-[bold] float-right text-[22px] leading-5 cursor-pointer transition-[0.3s] ml-[15px] hover:text-[black];
+}
+
+.activeOnMsgReceived {
+  @apply bg-red-500 hover:bg-red-700
+}
+
+.commonForAllBtn {
+  @apply text-white font-bold py-2 px-4 rounded
+}
