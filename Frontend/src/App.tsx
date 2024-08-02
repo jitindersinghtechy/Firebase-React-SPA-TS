@@ -65,13 +65,13 @@ function App() {
       {/* Three Different Button Type */}
       <div className='flex justify-center space-x-4 mt-6'>
         <div>
-          <button onClick={() => { sendNotification(1) }} className={clsx({ activeOnMsgReceived:responseOfButton===1 }, { 'bg-blue-500 hover:bg-blue-700':responseOfButton != 1 }, {commonForAllBtn:true})}>Send 1 Message {activeOnMsgReceived:responseOfButton===1?<span>&#9989;</span>:<></>}</button>
+          <button onClick={() => { sendNotification(1) }} className={clsx({ activeOnMsgReceived:responseOfButton===1 }, { 'bg-blue-500 hover:bg-blue-700':responseOfButton != 1 }, {commonForAllBtn:true})}>Send 1 Message {responseOfButton===1?<span>&#9989;</span>:<></>}</button>
         </div>
         <div>
-          <button onClick={() => { sendNotification(2) }} className={clsx({ activeOnMsgReceived:responseOfButton===2 }, { 'bg-green-500 hover:bg-green-700':responseOfButton != 2 },{commonForAllBtn:true})}>Send 2 Message {activeOnMsgReceived:responseOfButton===2?<span>&#9989;</span>:<></>}</button>
+          <button onClick={() => { sendNotification(2) }} className={clsx({ activeOnMsgReceived:responseOfButton===2 }, { 'bg-green-500 hover:bg-green-700':responseOfButton != 2 },{commonForAllBtn:true})}>Send 2 Message {responseOfButton===2?<span>&#9989;</span>:<></>}</button>
         </div>
         <div>
-          <button onClick={() => { sendNotification(3) }} className={clsx({ activeOnMsgReceived:responseOfButton===3 }, { 'bg-cyan-500 hover:bg-cyan-700':responseOfButton != 3 },{commonForAllBtn:true})}>Send 3 Message {activeOnMsgReceived:responseOfButton===3?<span>&#9989;</span>:<></>}</button>
+          <button onClick={() => { sendNotification(3) }} className={clsx({ activeOnMsgReceived:responseOfButton===3 }, { 'bg-cyan-500 hover:bg-cyan-700':responseOfButton != 3 },{commonForAllBtn:true})}>Send 3 Message {responseOfButton===3?<span>&#9989;</span>:<></>}</button>
         </div>
       </div>
     </div>
